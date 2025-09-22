@@ -1,0 +1,422 @@
+/* layout */
+
+body {
+        width: 90%;
+        width: 90%;
+        margin: 0 auto;
+        min-width: 900px;
+        max-width: 1000px;
+        font-family: Verdana,Arial,sans-serif;
+        position: relative;
+        bottom: auto;
+        background-color:#999999;
+        font-size:larger;
+
+}
+
+#header { height: 250px; width: 100%; }
+
+#header_logo { height: 150px;
+               width:100%;
+               margin-left:5%;
+               position:relative;
+
+}
+
+
+#bottom { width:800px;
+          height:40px;
+          margin-top: -40px;
+          position:relative;
+          clear: both;
+
+}
+
+#bottomlink{
+        clear: both;
+        border: 1px solid #999999;
+        font-size: 0.8em;
+        color: #cccccc;
+        padding: 10px 10px 10px 10px;
+        font-weight: bold;
+}
+
+.bottomlink a { text-decoration: none;
+                border-left: solid 1px;
+                color: #000000;
+                padding: 3px 15px;
+}
+
+
+#bottomlink img{
+        padding: 4px 4px 4px 10px;
+        vertical-align: middle;
+
+}
+
+
+.bottom_ul{ display: block;
+            overflow: hidden;
+            position: relative;
+
+}
+
+.bottom_li{ display: block;
+            float: left;
+            margin: 0 5px 0 0;
+            text-decoration:none;
+}
+
+#trenner { height: 30px;
+          background-color:#999999;
+ }
+
+#main { overflow: hidden; }
+
+.navi { float: left;
+        width: 220px;
+        padding-right:20px;
+        font-weight: bold;
+}
+
+.col { float: left;  /*  Seitenleiste rechts */
+       width: 220px;
+       font-weight: bold;
+}
+
+.navi+.col { float: right; }
+.content { padding: 0 10px 0 0;
+           overflow: hidden;
+
+}
+
+.content ul li{ margin-left: 10px;    /* format terminliste */
+                list-style-type: none;
+                font-size: 0.8em;
+                display: block;
+                padding: 0;
+
+}
+
+
+
+.unten { bottom: 0;  /* fiefer gestellter Link in navi  */
+         margin-top: 400px;
+         margin-left: -30px;
+         list-style-type: none;
+         border-bottom-style: none;
+         display: block;
+         text-decoration: none;
+
+}
+
+/* farben */
+
+#header {background-color: #999; }
+#navigation { background: #FFFFFF;}
+#main { background: #999; }
+#bottom { background: #999; }
+
+
+.navi {background: #999;}
+.navi+.col {background: #999;}
+.content { background: url(bilder/verlauf.png) repeat-y; }
+.literatur {background: #999; font-family: Verdana,Arial,sans-serif;
+}
+
+
+/* schriften */
+
+h1{
+ font-size: 2em;
+ color: #004080;
+}
+
+h2{
+ font-size: 1.5em;
+ color: #5D5D5D;
+}
+
+h3{
+ font-size: 1.1em;
+ color: #333333;
+}
+
+h4{
+ font-size: 0.8em%;
+ font-weight: bold ;
+ color: #333333;
+}
+
+h5{
+ font-size: 0.5em%;
+ color: #333333;
+ text-decoration:underline;
+}
+
+.navi h2, .col h2 { font-weight: bold;
+                    text-align:center;
+}
+
+
+/*  Navigationslinks und Verhalten*/
+
+.navi a {
+           list-style-image: url(hammer.png);
+           border-bottom: 2px dotted #777;
+           list-style-position:inside;
+           padding-left: 20px;
+           text-decoration: none;
+           font-size: 0.8em;
+           color: black;
+           display: block;
+}
+
+.navi a:visited { color: blue; }
+
+.navi a:active, a:focus { color: red; }
+
+.navi a:hover { color: white; }
+
+
+
+.mail { font-size: 0.7em;  /* Mailadresse fett  */
+        font-weight:bold;
+}
+
+
+.navi li { list-style-image: url(hammer.png);  /* Liste besteht nur aus Symbol  */
+
+}
+
+
+.col li { text-decoration: none;  /* Adressen  */
+          list-style-type: none;
+          font-size: 0.8em;
+          display: block;
+          padding: 0;
+}
+
+
+/* Dekoration */
+
+/*
+.extLink  { background: transparent url(link.png) no-repeat center left;
+           text-decoration: none;
+
+
+
+}  */
+
+.extLink { background: url(bilder/pfeil1.png) no-repeat;
+           padding-left: 1.5em;
+           text-decoration: none;
+
+}
+
+
+.intLink  li a{ list-style-image: url(bilder/pfeil1.png);  /* Gestaltung interner Links*/
+           text-decoration: none;
+
+}
+
+.intLink li {
+           list-style-image: url(pfeil1.png);
+           margin-left: 15px;
+           padding-left: 10px;
+           text-decoration: none;
+           list-style-type: none;
+}
+
+.extMail { background: transparent url(mail.png);
+           no-repeat;
+           center left;
+}
+
+acronym  { border-bottom: 2px dotted red;
+           cursor: help;
+}
+
+
+.pdf_link { background: url(pdf.png) no-repeat center left;
+            padding-left: 15px;
+            text-decoration: none;
+}
+
+/*  Positionierung der Scherenschnitte-Thumbs    */
+
+.schere { overflow: auto;
+}
+
+.schere dl  { float: left;
+             margin: 2px;
+             width:150px;
+}
+
+.schere dt { line-height: 0;
+}
+
+.schere dd { padding: 2px;
+        font-size: 0.8em;
+        width: 146px;
+        height: 60px;
+        background: #555;
+        color: #fff;
+        margin: 0;
+}
+
+.trennlinie { clear: both;
+        border-bottom:2px;
+
+}
+
+.invisible {                     /*   unsichtbar    */
+        clear: both;
+        border: 1px;
+        border-style: hidden;
+
+}
+
+
+/*   gruppierte Bilder  */
+
+.schere ul {
+list-style: none;
+}
+.schere ul ul {
+padding: 0;
+}
+.schere li {
+float: left;
+margin: 10px;
+padding: 10px;
+background: #ddd;
+}
+.schere li p {
+font-size: 1.1em;
+font-weight: bold;
+margin: 0 10px;
+}
+.schere li li {
+line-height: 0;
+margin: 0;
+}
+.schere li li img {
+display: block; /* fix for ie whitespace bug */
+}
+
+.schere li li p {
+line-height: 140%;
+padding: 3px;
+margin: 0;
+font-size: 0.8em;
+font-weight: normal;
+width: 144px;
+height: 60px;
+background: #555;
+color: #fff;
+}
+
+/*  bild und text floatend */
+
+
+
+.schere_thumb { height: 300px;
+                overflow:hidden;
+                float: left;
+                margin: 10px;
+                padding: 10px;
+                background: #666666;
+
+}
+
+.schere_thumb_text {
+                margin-top: 1em;
+                text-align: left;
+                float: left;
+                background: #666666;
+                font-size: 0.6em;
+                width: 150px;
+}
+
+.schere_text {
+                float: right;
+                margin: 10px;
+                padding: 10px;
+                background: #ddd;
+                clear: both;
+}
+
+.schere p { text-indent: 3em;
+            text-align:justify;
+}
+
+.schere p:first-letter { font-weight:bold;
+                         font-size: x-large;
+}
+
+/*  Ausrichtung Bild und Text */
+
+.pfad_bild {
+                overflow:hidden;
+                float: left;
+                margin-right: 10px;
+}
+
+.pfad_text {
+                float: left;
+                margin: 10px;
+                padding: 10px;
+                background: #999;
+}
+
+
+.schere_trenner, .pfad_trenner { height: 0px;
+                clear: both;
+}
+
+.trenn_bild { clear: both;
+              border-bottom:2px;
+              border-bottom:20px;
+
+}
+
+/*  Thumbs für Fotos*/
+
+.foto { margin-left: 2em;
+          float: left;
+}
+
+
+.foto-l { position: relative;
+        float: left;
+}
+
+.foto dl  {
+            margin: 2px;
+            width: 150px;
+            height: 200px;
+            background: #555;
+            overflow: hidden;
+}
+
+.foto dt { line-height: 0;
+}
+
+.foto dd { padding: 2px;
+        font-size: 0.6em;
+        width: 146px;
+        height: 90px;
+        background: #555;
+        color: #fff;
+        margin: 0;
+}
+
+.cl, hr {
+        clear: both;
+        border: 1px solid #333333;
+        border-top-style: hidden;
+        border-bottom-style: solid;
+        border-left-style: hidden;
+        border-right-style: hidden;
+}
